@@ -1,5 +1,53 @@
-body{
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
   background-color: #333;
   color: white;
   font-family: jetbrains mono;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 5rem;
+}
+.profile {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+
+  gap: 1rem;
+}
+img[src*="img/download.jpg"] {
+  border-radius: 5rem;
+  width: 8rem;
+  height: 8rem;
+}
+
+a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #333;
+  padding: 0.5rem;
+  img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    margin-left: .5rem;
+  }
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fff;
 }
